@@ -1,3 +1,14 @@
+/*
+  the line height of the html page is 140% which means that the space between text is 140% of the font size
+  so since my font size is 16px the line height would be 23px
+  --
+  I used sans serif fonts since I want my website to look more professional
+  --
+  the font size of everything inside body is 16px by defualt 
+  --
+  I used a darker background colour to emphasize the colours of the rubiks cube and the text colour is ghostwhite 
+  so it is eaiser to read 
+ */
 body {
   line-height: 140%;
   font-family: Arial, Helvetica, sans-serif;
@@ -52,7 +63,7 @@ main {
   color: black;
   background-color: white;
   padding: 5px;
-  width: 65%;
+  width: 50%;
   margin: 0 auto;
 }
 footer {
