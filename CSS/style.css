@@ -9,6 +9,11 @@
   I used a darker background colour to emphasize the colours of the rubiks cube and the text colour is ghostwhite 
   so it is eaiser to read 
  */
+* {
+  /* line added by Mr. Hardman */
+  box-sizing: border-box;
+}
+
 body {
   line-height: 140%;
   font-family: Arial, Helvetica, sans-serif;
@@ -29,13 +34,16 @@ header {
 header * {
   display: inline-block;
 }
-header ul li {
+nav ul li {
   padding: 0;
   margin: 0;
+  /* border: 0; added by Mr. Hardman */
+  border: 0;
 }
-header ul {
-  padding: 0;
-  margin: 0;
+nav ul {
+  /* line added by Mr. Hardman */
+  display: flex;
+  list-style: none;
 }
 .nav-links {
   color: ghostwhite;
@@ -72,3 +80,10 @@ footer {
   background-color: #303030;
   text-align: center;
 }
+/* ul added bu Mr. Hardman */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/*  */
