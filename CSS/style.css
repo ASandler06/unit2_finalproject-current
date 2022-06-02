@@ -28,9 +28,16 @@ body {
   background-color: #1d1d1d;
   color: #ebebff;
 }
+/*
+  the height of the header is set to 60px
+  the text is aligned to the centre to make it easier to see nav
+  position is absolute so the header doesnt move from the top
+
+  background colour of the header is set to a ligher black than the main background 
+  so the user knows where the header starts and ends
+ */
 header {
   height: 60px;
-  width: 100%;
   text-align: center;
   position: absolute;
   top: 0;
@@ -54,6 +61,13 @@ nav ul {
   display: flex;
   list-style: none;
 }
+/*
+  the font colour is white to meet contrast requirements
+  text decoration is none so there is no underline
+  font weight is bold to make bring more attention to the text
+  the text size is 20px so it will be bigger than defualt text and smaller than heading text
+  transition duration 0.4s makes it so it takes 0.4 seconds for 1 whole transion to occur 
+ */
 .nav-links {
   color: #ffffff;
   text-decoration: none;
@@ -89,7 +103,7 @@ nav ul a:focus {
   height: 100%;
 }
 /*
-  adds a top margin of 60px so that the main doesnt overlap with the header
+  since the header height is 60px there is a top margin of 60px so that the main doesnt overlap with the header
   adds a padding of 10px for null space
   aligns all text to the centre so user attention goes to the centre
  */
