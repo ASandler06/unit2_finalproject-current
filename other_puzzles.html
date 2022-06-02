@@ -9,51 +9,57 @@
     <title>Other Puzzles</title>
     <style>
       /*
-             sets the background colour to #ececf8
+        sets the background colour to #ececf8
 
-             border-radius makes the div have rounded corners. The higher the value the more rounded it is
+        border-radius makes the div have rounded corners. The higher the value the more rounded it is
 
-             sets the margin for the top and bottom to 30px so there is space for the transition,
-             and the right and left margin to auto so the div is centred
+        sets the margin for the top and bottom to 30px so there is space for the transition,
+        and the right and left margin to auto so the div is centred
 
-             sets the padding for all sides to 10 px so there is some null space between the div border and the text and img
+        sets the padding for all sides to 10 px so there is some null space between the div border and the text and img
 
-             sets the font colour to #121212 so that the contrast is above 15.8
+        sets the font colour to #121212 so that the contrast is above 15.8
 
-             sets the width to of the div to 55% of the website
+        sets the width to of the div to 55% of the website
 
-             overflow hidden makes it so nothing spill out of the div
+        overflow hidden makes it so nothing spill out of the div
 
-             sets the transition duration to 0.5s which makes it so that 1 whole transition takes 0.5s
-             */
+        sets the transition duration to 0.5s which makes it so that 1 whole transition takes 0.5s
+        */
       .otherBox {
         background-color: #ececf8;
+        -moz-border-radius: 30px;
+        -webkit-border-radius: 30px;
         border-radius: 30px;
         margin: 30px auto;
         padding: 10px;
         color: #121212;
-        width: 55%;
+        width: 50%;
         overflow: hidden;
 
+        -o-transition-duration: 0.5s;
+        -moz-transition-duration: 0.5s;
+        -webkit-transition-duration: 0.5s;
         transition-duration: 0.5s;
       }
       /*
-            when the user hovers over the div or tabs over it the transition activates
-            which makes it move up by 5% and a box shadow will appear
-             */
+       when the user hovers over the div or tabs over it the transition activates
+       which makes it move up by 5% and a box shadow will appear
+       */
       .otherBox:hover,
-      .otherBox:focus {
+      .otherBox:focus-within {
+        -moz-transform: translateY(-5%);
+        -o-transform: translateY(-5%);
+        -webkit-transform: translateY(-5%);
         transform: translateY(-5%);
+
+        -moz-box-shadow: 10px 15px black;
+        -o-box-shadow: 10px 15px black;
         box-shadow: 10px 15px black;
       }
+      /* sets the width of the img to 25% of the div so that the img resizes when the website gets smaller */
       .otherBox img {
         width: 25%;
-      }
-      .otherBox p {
-        top: 10px;
-      }
-      .otherBox h1 {
-        margin: 0;
       }
     </style>
   </head>
@@ -81,10 +87,14 @@
     <main>
       <div class="otherBox">
         <h1>1x1 Cube</h1>
-        <img
-          src="images/1x1_cube.png"
-          alt="top down picture of a cube with the left side coloured red, right side coloured blue and the top side coloured white"
-        />
+        <a
+          href="https://speedcubeshop.com/products/1x1-speed-cube?variant=32195666542705"
+          target="_blank"
+        >
+          <img
+            src="images/1x1_cube.png"
+            alt="top down picture of a cube with the left side coloured red, right side coloured blue and the top side coloured white"
+        /></a>
         <p>
           Love the Rubiks Cube but can't solve it? Then this is the perfect
           'puzzle' for you! The 1x1 can always be solved and you dont even need
@@ -93,10 +103,14 @@
       </div>
       <div class="otherBox">
         <h1>4x4 Cube</h1>
-        <img
-          src="images/4x4_cube.png"
-          alt="top down picture of a cube with the left side coloured red, right side coloured blue and the top side coloured white"
-        />
+        <a
+          href="https://speedcubeshop.com/search?type=product&q=4x4"
+          target="_blank"
+        >
+          <img
+            src="images/4x4_cube.png"
+            alt="top down picture of a cube with the left side coloured red, right side coloured blue and the top side coloured white"
+        /></a>
         <p>
           Love the Rubiks Cube but want a harder challenge? The 4x4 is the
           perfect step up in difficulty and can still be fun to learn even if
@@ -105,10 +119,14 @@
       </div>
       <div class="otherBox">
         <h1>Pyraminx</h1>
-        <img
-          src="images/pyraminx.png"
-          alt="top down picture of a cube with the left side coloured red, right side coloured blue and the top side coloured white"
-        />
+        <a
+          href="https://speedcubeshop.com/search?type=product&q=pyraminx"
+          target="_blank"
+        >
+          <img
+            src="images/pyraminx.png"
+            alt="top down picture of a cube with the left side coloured red, right side coloured blue and the top side coloured white"
+        /></a>
         <p>
           Not exactly a cube but still a fun puzzle, with some time anybody
           should be able to solve this puzzle even if you twist and turn
@@ -117,10 +135,14 @@
       </div>
       <div class="otherBox">
         <h1>2x2 Cube</h1>
-        <img
-          src="images/2x2_cube.png"
-          alt="top down picture of a cube with the left side coloured red, right side coloured blue and the top side coloured white"
-        />
+        <a
+          href="https://speedcubeshop.com/search?type=product&q=2x2"
+          target="_blank"
+        >
+          <img
+            src="images/2x2_cube.png"
+            alt="top down picture of a cube with the left side coloured red, right side coloured blue and the top side coloured white"
+        /></a>
         <p>Do you feel that the rubiks cube is too hard?</p>
       </div>
     </main>
