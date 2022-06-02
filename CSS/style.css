@@ -1,22 +1,22 @@
 /*
-  the line height of the html page is 140% which means that the space between text is 140% of the font size
-  so since my font size is 16px the line height would be 23px
-  --
-  I used sans serif fonts since I want my website to look more professional
-  --
-  the font size of everything inside body is 16px by defualt 
-  --
-  I used a darker background colour to emphasize the colours of the rubiks cube and the text colour is ghostwhite 
-  so it is eaiser to read 
+  the height is set to 101% so that the scroll bar is visible on all pages
+  because if the webpage has a scroll bar all the element get shifted a little bit to the left 
+  so if all pages have a scroll bar the positon of sections will be consistent
  */
-* {
-  /* line added by Mr. Hardman */
-  box-sizing: border-box;
-}
-
 html {
   height: 101%;
 }
+/*
+  the line height of the html page is 140% which means that the space between text is 140% of the font size
+  so since my font size is 16px the line height would be 23px
+  --
+  I used sans serif fonts since I want my website to look more modern
+  --
+  the font size of everything inside body is 16px by defualt 
+  --
+  I used a darker background colour to emphasize the colours of the rubiks cube and the text colour is an off-white 
+  so it is easier to read 
+ */
 body {
   line-height: 140%;
   font-family: Arial, Helvetica, sans-serif;
@@ -34,13 +34,15 @@ header {
   left: 0;
   background-color: #222227;
 }
+/*
+  all the elements inside the header will have a display of inline block
+  so that i can set the height and width of the elements
+ */
 header * {
   display: inline-block;
 }
 nav ul li {
-  padding: 0;
-  margin: 0;
-  /* border: 0; added by Mr. Hardman */
+  /* line added added by Mr. Hardman */
   border: 0;
 }
 nav ul {
@@ -56,9 +58,17 @@ nav ul {
   padding: 19px;
   transition-duration: 0.4s;
 }
-nav ul a:hover {
+/*
+  when the user hovers over or focuses on a nav link the background colour of the link turns light gray
+ */
+nav ul a:hover,
+nav ul a:focus {
   background-color: #4d4b4b;
 }
+/*
+  sets the headerImg element to position absolute and puts it in the top left corner of the webpage
+  sets the width and height to 50px so the image fits in the header
+ */
 #headerImg {
   position: absolute;
   left: 0;
@@ -67,15 +77,27 @@ nav ul a:hover {
   width: 50px;
   height: 50px;
 }
+/*
+  sets the width and height of the header img to the same size of the headerImg parent element
+ */
 #headerImg img {
   width: 100%;
   height: 100%;
 }
+/*
+  adds a top margin of 60px so that the main doesnt overlap with the header
+  adds a padding of 10px for null space
+  aligns all text to the centre so user attention goes to the centre
+ */
 main {
   margin-top: 60px;
   padding: 10px;
   text-align: center;
 }
+/* 
+  positions the footer at the bottom of the webpage and makes it so that it stays there not matter what
+  makes the background colour of the footer light gray and aligns all text in the footer to the centre
+*/
 footer {
   position: absolute;
   right: 0;
