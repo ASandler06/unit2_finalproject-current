@@ -58,6 +58,10 @@ nav ul li {
 }
 nav ul {
   /* line added by Mr. Hardman */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
@@ -74,6 +78,9 @@ nav ul {
   font-weight: bold;
   font-size: 20px;
   padding: 19px;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
 /*
