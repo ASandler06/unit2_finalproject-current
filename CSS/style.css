@@ -1,3 +1,7 @@
+* {
+  /* line added yb Mr.Hardman */
+  box-sizing: border-box;
+}
 /*
   the height is set to 101% so that the scroll bar is visible on all pages
   because if the webpage has a scroll bar all the element get shifted a little bit to the left 
